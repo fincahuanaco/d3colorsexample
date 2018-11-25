@@ -1,0 +1,25 @@
+<html lang="en-US">
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+<div class="w3-container w3-dark-grey w3-padding">
+  <h2>D3 Colors</h2>
+  <div id="a1" class="c1" style="width:200px;float: left;">  rgb(255, 255, 229)</div>
+  <div id="a2" class="c1" style="width:200px;float: left;">  rgb(120, 197, 120)</div>
+  <div id="a3" class="c1" style="width:200px;float: left;">  rgb(0, 69, 41)</div>
+</div>
+<script>
+
+var yellow = d3.interpolateYlGn(0.1), // "rgb(255, 255, 229)"
+    yellowGreen = d3.interpolateYlGn(0.5), // "rgb(120, 197, 120)"
+    green = d3.interpolateYlGn(1); // "rgb(0, 69, 41)"
+var div1 = document.getElementById( 'a1' );
+div1.style.backgroundColor =yellow;
+
+var div2 = document.getElementById( 'a2' );
+div2.style.backgroundColor =yellowGreen;
+var div3 = document.getElementById( 'a3' );
+div3.style.backgroundColor =green;
+</script>
+
+</html>
